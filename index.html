@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Gyro Ball</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Boutique Gyro Ball</h1>
+        <nav>
+            <a href="#products">Produits</a>
+            <a href="#cart">Panier</a>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Nos produits</h2>
+            <div class="product">
+                <h3>Gyro Ball Classique</h3>
+                <img src="gyroball.jpg" alt="Gyro Ball Classique">
+                <p>Prix : 29.99 €</p>
+                <button onclick="addToCart('Gyro Ball Classique', 29.99)">Ajouter au panier</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Votre Panier</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total : 0 €</p>
+            <button onclick="checkout()">Valider la commande</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Boutique Gyro Ball - Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
